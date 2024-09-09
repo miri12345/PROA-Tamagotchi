@@ -2,7 +2,7 @@
 fun main() {
     println("Bem-vindo ao Simulador de Animal de Estimação Virtual!")
     println("Digite o nome do seu animal de estimação:")
-    val nomePet = readlnOrNull() ?: "Baltazar Guilherme Tenório"
+    val nomePet = readlnOrNull() 
     val pet = VirtualPet(nomePet)
 
     while (true) {
