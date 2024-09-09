@@ -23,6 +23,12 @@ Ao iniciar o programa, o usuário verá as seguintes opções:
 5. Dar banho no pet
 6. Verificar o status do pet
 7. Sair do jogo
+### Exemplo:
+    fun alimentar() {
+        nivelDeFome -= 10
+        nivelBanheiro += 10
+        println("$nome foi alimentado. O nível de fome diminuiu.")
+    }
    
 ### Condições de Game Over
 O jogo termina se qualquer um dos seguintes parâmetros atingir seu limite:
@@ -32,6 +38,16 @@ O jogo termina se qualquer um dos seguintes parâmetros atingir seu limite:
 * Felicidade: Se a felicidade cair para 0, o pet morrerá de tristeza.
 * Banheiro: Se a necessidade de usar o banheiro atingir 100, o pet morrerá.
 * Sujeira: Se o nível de sujeira atingir 100, o pet morrerá.
+
+  ### Exemplo:
+
+       pet.gameOver()
+
+
+        if (pet.nivelDeFome >= 100 || pet.nivelCansaco >= 100 || pet.nivelFelicidade <= 0 || pet.nivelBanheiro >= 100 || pet.nivelSujeira >= 100) {
+            println("O programa foi encerrado porque $nomePet morreu.")
+            return
+        }
   
 ### Idade
 Se o pet atingir 50 anos de idade, o usuário verá uma mensagem de parabéns pela longevidade do pet.
