@@ -1,7 +1,7 @@
 class VirtualPet(val nome: String) {
     var nivelDeFome = 50
     var nivelFelicidade = 50
-    var nivelCansaco = 10
+    var nivelCansaco = 0
     var idade = 0
     var nivelBanheiro = 0
     var nivelSujeira = 0
