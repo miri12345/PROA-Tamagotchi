@@ -102,11 +102,7 @@ class VirtualPet(val nome: String) {
         nivelCansaco -= 10
     }
 
-    fun status() {
-        println("status não implementado ")
-
-
-    }
+    
     fun gameOver() {
         when {
             nivelDeFome >= 100 -> {
